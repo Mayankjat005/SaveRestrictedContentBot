@@ -42,8 +42,3 @@ async def remt(event):
     except Exception:
         await event.edit("No thumbnail saved.")                        
   
-@Drone.on(events.NewMessage(incoming=True, pattern=f"{S}"))
-async def start(event):
-    text = "Send me Link of any message to clone it here, For private channel message, send invite link first.\n\n**SUPPORT:** @Warrior_Units"
-    await start_srb(event, text)
-    
